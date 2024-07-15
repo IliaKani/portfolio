@@ -1,0 +1,8 @@
+.slide {
+    -webkit-animation: slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -moz-animation: slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation: slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}

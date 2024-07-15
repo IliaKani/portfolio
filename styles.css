@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Geist';
+    src: url('../fonts/Geist-Light.eot');
+    src: url('../fonts/Geist-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geist-Light.woff2') format('woff2'),
+        url('../fonts/Geist-Light.woff') format('woff'),
+        url('../fonts/Geist-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Geist';
+    src: url('../fonts/Geist-Regular.eot');
+    src: url('../fonts/Geist-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geist-Regular.woff2') format('woff2'),
+        url('../fonts/Geist-Regular.woff') format('woff'),
+        url('../fonts/Geist-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Geist';
+    src: url('../fonts/Geist-Medium.eot');
+    src: url('../fonts/Geist-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geist-Medium.woff2') format('woff2'),
+        url('../fonts/Geist-Medium.woff') format('woff'),
+        url('../fonts/Geist-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Geist';
+    src: url('../fonts/Geist-SemiBold.eot');
+    src: url('../fonts/Geist-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geist-SemiBold.woff2') format('woff2'),
+        url('../fonts/Geist-SemiBold.woff') format('woff'),
+        url('../fonts/Geist-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-size: 16px; /* Base font size */
+    font-family: 'Geist';
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* ------ Media ------ */
+img {
+	/*
+    max-width: 100%;
+    max-height: 100%;
+	*/
+	pointer-events: none !important;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* ------------ Animations ----------- */
+.slide {
+	-webkit-animation:slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+/* ------ Delays ------ */
+.delay01 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+.delay02 { -webkit-animation-delay: .8s; animation-delay: .8s;}
+.delay03 { -webkit-animation-delay: .9s; animation-delay: .9s;}
+
+@-webkit-keyframes slide {
+	0% {
+    opacity: 0;
+    -webkit-transform: translateY(10vh);
+  }
+	100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }	
+}
+
+@keyframes slide {
+	0% {
+    opacity: 0;
+    -webkit-transform: translateY(10vh);
+  }
+	100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }	
+}
+
+
+/* ------------ Header ------------ */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+	padding: 40px 0;
+	box-sizing: border-box;
+
+	max-width: 1200px;
+	left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+.logo,
+.header a {
+	font-family: 'Geist';
+	color: #111111;
+	font-weight: 500;
+	font-size: 1.375rem;
+}
+.header a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		padding: 20px;
+	}
+	.logo,
+	.header a {
+		font-weight: 500;
+		font-size: 1.125rem;
+	}
+}
+
+/* ------------ Hero Home ------------ */
+
+.hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 24vh 0 16vh 0;
+}
+h1 {
+	font-size: 4.6vw;
+	font-size: 4.5rem;
+	line-height: 120%;
+    font-family: 'Geist';
+	font-weight: 600;
+	color: #111111;
+}
+
+@media screen and (max-width: 767px) {
+	.hero {
+		margin: 0 20px;
+		max-width: 100%;
+		padding: 16vh 0 8vh 0;
+	}	
+	h1 {
+		font-size: 2.2rem;
+		line-height: 120%;
+		max-width: 100%;
+	}
+}
+
+/* ------------ Homepage Work Section ------------ */
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.work-item {
+	max-width: 50%; 
+    height: auto; 
+	text-align: center;
+	box-sizing: border-box;
+    display: inline-block;
+	margin-bottom: 40px;
+}
+
+.work-item:nth-child(2n-2) {
+	position: relative;
+	top: 200px;
+	top: 300px; /* CHANGE THIS for V2 */
+}
+
+.work-item-image {
+	border-radius: 24px;
+	overflow: hidden;
+	transition: all .8s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.work-item-image:hover {
+	transform: scale(.95);
+	transition: all .8s cubic-bezier(0.2, 0.6, 0.2, 1);
+	cursor: pointer;
+}
+
+.work-item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+ 	object-fit: cover;
+	transition: all .8s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.work-item:hover img {
+	transform: scale(1.1);
+	transition: all .8s cubic-bezier(0.2, 0.6, 0.2, 1);
+	cursor: pointer;
+}
+.work-item-info {
+	text-align: center;
+}
+
+.work-item-company {
+	color: #111111;
+    font-family: 'Geist';
+	font-weight: 500;
+	font-size: 1.375rem;
+	line-height: 160%;
+	display: block;
+	text-decoration: none;
+}
+
+.work-item-description {
+	color: #666666;
+    font-family: 'Geist';
+	font-weight: 300;
+	font-size: 1.125rem;
+	display: block;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+	.grid {
+		padding: 20px;
+	}
+	.work-item  {
+	 	width: 100%;
+		margin-bottom: 40px;
+		max-width: 100%;
+	}
+	.work-item:nth-child(2n-2) {
+		top: 0;
+	}
+	.work-item-image {
+		height: 480px;
+	}
+	.work-item-info {
+		margin-top: 12px;
+	}
+	.work-item-company {
+		font-size: 1.125rem;
+		font-weight: 600;
+	}
+	.work-item-description {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+  }
+
+
+
+/* ------------ Homepage About Section ------------ */
+
+.about-me {
+    margin: 0px auto;
+	max-width: 45vw;
+    max-width: 760px;
+    padding: 20vw 0 12vw 0; 
+	padding: 10vw 0 12vw 0; /* CHANGE THIS for V2 */
+}
+p {
+	line-height: 160%;
+    font-family: 'Geist';
+	color: #111111;
+	color: #333333;
+	font-weight: 300;
+	font-size: 1.375rem;
+	
+}
+.description a {
+	color: #111111;
+    font-family: 'Geist';
+	font-weight: 500;
+	font-size: 1.375rem;
+	padding-top: 30px;
+	display: block;
+}
+.description a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.contact {
+	margin-top: 12vw;;
+}
+p span {
+	line-height: 160%;
+    font-family: 'Geist';
+	color: #666666;
+	font-weight: 300;
+	font-size: inherit;
+}
+.email {
+	font-family: 'Geist';
+	color: #111111;
+	font-weight: 600;
+	font-size: 4rem;
+	font-size: 3.7vw;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+	.about-me {
+		max-width: 100%;
+		margin: 0px 20px;
+		padding: 20vh 0;
+	}
+	p {
+		font-weight: 400;
+		font-size: 1.125rem;
+	}
+	.description a {
+		font-weight: 600;
+		font-size: 1.125rem;
+		padding-top: 20px;
+	}
+	.contact {
+		margin-top: 15vh;;
+	}
+	.email {
+		font-size: 8vw;
+	}
+}
+
+/* ------------ Footer ------------ */
+
+footer {
+	max-width: 760px;
+    margin: 0 auto;
+    font-family: 'Geist';
+	color: #888888;
+	font-weight: 400;
+	font-size: 0.875rem;
+	padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+	footer {
+		max-width: 100%;
+		padding: 20px;
+	}
+}
+
