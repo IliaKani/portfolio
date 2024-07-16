@@ -281,9 +281,6 @@ h1 {
 	.work-item:nth-child(2n-2) {
 		top: 0;
 	}
-	.work-item-image {
-		height: 480px;
-	}
 	.work-item-info {
 		margin-top: 12px;
 	}
