@@ -204,6 +204,7 @@ h1 {
 	justify-content: space-between; 
 	max-width: 1200px;
 	margin: 0 auto;
+	margin-bottom: 30%;
 }
 
 .work-item {
@@ -272,6 +273,7 @@ h1 {
 @media screen and (max-width: 767px) {
 	.grid {
 		padding: 20px;
+		margin-bottom: 0;
 	}
 	.work-item  {
 	 	width: 100%;
