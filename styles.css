@@ -204,7 +204,7 @@ h1 {
 	justify-content: space-between; 
 	max-width: 1200px;
 	margin: 0 auto;
-	margin-bottom: 20%;
+	margin-bottom: 5%;
 }
 
 .work-item {
@@ -352,7 +352,7 @@ p span {
 	.about-me {
 		max-width: 100%;
 		margin: 0px 20px;
-		padding: 20vh 0;
+		padding: 10vh 0;
 	}
 	p {
 		font-weight: 400;
